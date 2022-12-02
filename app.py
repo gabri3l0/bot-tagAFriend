@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 import random
 import pyautogui
 from pyautogui import hotkey
@@ -29,7 +30,11 @@ while True:
 	pyautogui.typewrite(["enter"])
 	pyautogui.typewrite(["enter"])
 
+
+	now = datetime.now()
+	current_time = now.strftime("%H:%M:%S")
 	countComment += 1
-	print('Comment #', countComment)
+
+	print('Comment #', countComment, ' posted at ',current_time)
 
 	time.sleep(commentsPerTime * 60)
