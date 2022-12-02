@@ -32,4 +32,4 @@ while True:
 	countComment += 1
 	print('Comment #', countComment)
 
-	time.sleep(commentsPerTime)
+	time.sleep(commentsPerTime * 60)
